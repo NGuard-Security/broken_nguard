@@ -1,7 +1,7 @@
 @import url("fonts/GmarketSans/GmarketSans.css");
 
 * {
-    font-family: "GmarketSans";
+    font-family: "GmarketSans" !important;
 }
 
 ::selection {
