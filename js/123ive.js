@@ -1,131 +1,154 @@
-function _0x24f5() {
-    const _0x135c44 = [
-        "log",
-        "error",
-        "1010630jeFkoP",
-        "312615gNgIoM",
-        "{}.constructor(\x22return\x20this\x22)(\x20)",
-        "2498452GuugCp",
-        "length",
-        "toString",
-        "3019590qKRRCo",
-        "언니야들\x20사랑해요\x20❤️",
-        "p.copyright",
-        "exception",
-        "36FhQnIh",
-        "귀여워버리기!\x20❤️",
-        "constructor",
-        "2763296sRHcvM",
-        "search",
-        "41226yeLZwG",
-        "prototype",
-        "return\x20(function()\x20",
-        "floor",
-        "click",
-        "warn",
-        "bind",
-        "1649583YXDfpd",
-        "15QBhpUD",
-        "apply",
-        "info",
-        "random",
-        "(((.+)+)+)+$",
-        "console",
-    ];
-    _0x24f5 = function () {
-        return _0x135c44;
-    };
-    return _0x24f5();
-}
-const _0x1996dc = _0x4102;
-(function (_0x1e0ef5, _0x196e6f) {
-    const _0x1b9e00 = _0x4102,
-        _0x4bb40c = _0x1e0ef5();
-    while (!![]) {
-        try {
-            const _0x520c51 =
-                -parseInt(_0x1b9e00(0x1f8)) / 0x1 +
-                parseInt(_0x1b9e00(0x1f7)) / 0x2 +
-                parseInt(_0x1b9e00(0x1ee)) / 0x3 +
-                parseInt(_0x1b9e00(0x1fa)) / 0x4 +
-                (parseInt(_0x1b9e00(0x1ef)) / 0x5) * (parseInt(_0x1b9e00(0x1e7)) / 0x6) +
-                parseInt(_0x1b9e00(0x1fd)) / 0x7 +
-                (-parseInt(_0x1b9e00(0x1e5)) / 0x8) * (parseInt(_0x1b9e00(0x1e2)) / 0x9);
-            if (_0x520c51 === _0x196e6f) break;
-            else _0x4bb40c["push"](_0x4bb40c["shift"]());
-        } catch (_0x2c5d33) {
-            _0x4bb40c["push"](_0x4bb40c["shift"]());
-        }
-    }
-})(_0x24f5, 0x6ad05);
-const _0x729e5f = (function () {
-        let _0x511784 = !![];
-        return function (_0xaa2b76, _0x287686) {
-            const _0xe8a21 = _0x511784
-                ? function () {
-                      const _0x438ff0 = _0x4102;
-                      if (_0x287686) {
-                          const _0x44a721 = _0x287686[_0x438ff0(0x1f0)](_0xaa2b76, arguments);
-                          return (_0x287686 = null), _0x44a721;
-                      }
-                  }
-                : function () {};
-            return (_0x511784 = ![]), _0xe8a21;
-        };
-    })(),
-    _0x59bdc1 = _0x729e5f(this, function () {
-        const _0x1dae8b = _0x4102;
-        return _0x59bdc1[_0x1dae8b(0x1fc)]()["search"](_0x1dae8b(0x1f3))[_0x1dae8b(0x1fc)]()[_0x1dae8b(0x1e4)](_0x59bdc1)[_0x1dae8b(0x1e6)](_0x1dae8b(0x1f3));
-    });
-function _0x4102(_0xf3c3d9, _0x4f867c) {
-    const _0x3bcc2e = _0x24f5();
+const _0x209d5e = _0x23a5;
+function _0x23a5(_0x241d59, _0x2aea57) {
+    const _0x345416 = _0x3c29();
     return (
-        (_0x4102 = function (_0x4e2326, _0x50eb4e) {
-            _0x4e2326 = _0x4e2326 - 0x1e0;
-            let _0x24cc6e = _0x3bcc2e[_0x4e2326];
-            return _0x24cc6e;
+        (_0x23a5 = function (_0x268c1b, _0x5fd346) {
+            _0x268c1b = _0x268c1b - 0x14f;
+            let _0x731e5c = _0x345416[_0x268c1b];
+            return _0x731e5c;
         }),
-        _0x4102(_0xf3c3d9, _0x4f867c)
+        _0x23a5(_0x241d59, _0x2aea57)
     );
 }
-_0x59bdc1();
-const _0x50eb4e = (function () {
-        let _0x10b093 = !![];
-        return function (_0x5ec02d, _0x277744) {
-            const _0x2fecbc = _0x10b093
+(function (_0x36e70a, _0x564110) {
+    const _0x1e2c37 = _0x23a5,
+        _0x24ad37 = _0x36e70a();
+    while (!![]) {
+        try {
+            const _0x31b932 =
+                parseInt(_0x1e2c37(0x15d)) / 0x1 +
+                (parseInt(_0x1e2c37(0x16f)) / 0x2) * (parseInt(_0x1e2c37(0x15e)) / 0x3) +
+                (parseInt(_0x1e2c37(0x170)) / 0x4) * (-parseInt(_0x1e2c37(0x161)) / 0x5) +
+                -parseInt(_0x1e2c37(0x164)) / 0x6 +
+                (-parseInt(_0x1e2c37(0x168)) / 0x7) * (-parseInt(_0x1e2c37(0x155)) / 0x8) +
+                (-parseInt(_0x1e2c37(0x157)) / 0x9) * (-parseInt(_0x1e2c37(0x16b)) / 0xa) +
+                -parseInt(_0x1e2c37(0x156)) / 0xb;
+            if (_0x31b932 === _0x564110) break;
+            else _0x24ad37["push"](_0x24ad37["shift"]());
+        } catch (_0x1419ea) {
+            _0x24ad37["push"](_0x24ad37["shift"]());
+        }
+    }
+})(_0x3c29, 0x7e14b);
+function _0x3c29() {
+    const _0x4fc695 = [
+        "bind",
+        "search",
+        "(((.+)+)+)+$",
+        "473224XAVPlv",
+        "42MXqMtf",
+        "Narcissistic,\x20my\x20god\x20I\x20love\x20it\x20서로를\x20비춘\x20밤",
+        "random",
+        "618335TsLqeg",
+        "warn",
+        "apply",
+        "3889710BAKLMA",
+        "Woo\x20어서\x20와서\x20love\x20dive",
+        "눈동자\x20아래로",
+        "중간고사\x20있어요...\x20후에엥...\x20😭",
+        "1904623AQBPjZ",
+        "마음은\x20이렇게\x20알다가도\x20모르지",
+        "exception",
+        "3610zQngor",
+        "toString",
+        "log",
+        "언니야들\x20사랑해요\x20❤️",
+        "62576MlPCXk",
+        "16UhoXDv",
+        "table",
+        "I\x20walk\x20slowly,\x20but\x20I\x20never\x20walk\x20backwards.",
+        "trace",
+        "console",
+        "{}.constructor(\x22return\x20this\x22)(\x20)",
+        "floor",
+        "oh\x20perfect\x20sacrifice",
+        "return\x20(function()\x20",
+        "length",
+        "constructor",
+        "사랑이라는\x20건\x20한순간에\x20필\x20테니",
+        "click",
+        "8Fkcuxf",
+        "2701644anNySN",
+        "17991hOCKGX",
+        "info",
+        "yeah\x20숨\x20참고\x20love\x20dive",
+    ];
+    _0x3c29 = function () {
+        return _0x4fc695;
+    };
+    return _0x3c29();
+}
+const _0x3dc5c9 = (function () {
+        let _0xfe89ee = !![];
+        return function (_0x310061, _0x45ea76) {
+            const _0x362245 = _0xfe89ee
                 ? function () {
-                      if (_0x277744) {
-                          const _0x44f97e = _0x277744["apply"](_0x5ec02d, arguments);
-                          return (_0x277744 = null), _0x44f97e;
+                      if (_0x45ea76) {
+                          const _0xc3600 = _0x45ea76["apply"](_0x310061, arguments);
+                          return (_0x45ea76 = null), _0xc3600;
                       }
                   }
                 : function () {};
-            return (_0x10b093 = ![]), _0x2fecbc;
+            return (_0xfe89ee = ![]), _0x362245;
         };
     })(),
-    _0x4e2326 = _0x50eb4e(this, function () {
-        const _0x590f91 = _0x4102;
-        let _0xe1a3fb;
+    _0xd133e4 = _0x3dc5c9(this, function () {
+        const _0x328cc4 = _0x23a5;
+        return _0xd133e4[_0x328cc4(0x16c)]()[_0x328cc4(0x15b)](_0x328cc4(0x15c))["toString"]()[_0x328cc4(0x152)](_0xd133e4)[_0x328cc4(0x15b)](_0x328cc4(0x15c));
+    });
+_0xd133e4();
+const _0x5fd346 = (function () {
+        let _0x4e3f71 = !![];
+        return function (_0x46cd75, _0x1d2446) {
+            const _0x31aef4 = _0x4e3f71
+                ? function () {
+                      const _0x13cf38 = _0x23a5;
+                      if (_0x1d2446) {
+                          const _0x16102d = _0x1d2446[_0x13cf38(0x163)](_0x46cd75, arguments);
+                          return (_0x1d2446 = null), _0x16102d;
+                      }
+                  }
+                : function () {};
+            return (_0x4e3f71 = ![]), _0x31aef4;
+        };
+    })(),
+    _0x268c1b = _0x5fd346(this, function () {
+        const _0x3336d0 = _0x23a5;
+        let _0x319153;
         try {
-            const _0x1680c4 = Function(_0x590f91(0x1e9) + _0x590f91(0x1f9) + ");");
-            _0xe1a3fb = _0x1680c4();
-        } catch (_0x2a169f) {
-            _0xe1a3fb = window;
+            const _0x249d64 = Function(_0x3336d0(0x150) + _0x3336d0(0x175) + ");");
+            _0x319153 = _0x249d64();
+        } catch (_0x54b9b3) {
+            _0x319153 = window;
         }
-        const _0x54afb8 = (_0xe1a3fb[_0x590f91(0x1f4)] = _0xe1a3fb[_0x590f91(0x1f4)] || {}),
-            _0x456372 = [_0x590f91(0x1f5), _0x590f91(0x1ec), _0x590f91(0x1f1), _0x590f91(0x1f6), _0x590f91(0x1e1), "table", "trace"];
-        for (let _0x671e72 = 0x0; _0x671e72 < _0x456372["length"]; _0x671e72++) {
-            const _0x321ec3 = _0x50eb4e[_0x590f91(0x1e4)][_0x590f91(0x1e8)][_0x590f91(0x1ed)](_0x50eb4e),
-                _0x5d0c36 = _0x456372[_0x671e72],
-                _0x2ad3b0 = _0x54afb8[_0x5d0c36] || _0x321ec3;
-            (_0x321ec3["__proto__"] = _0x50eb4e[_0x590f91(0x1ed)](_0x50eb4e)), (_0x321ec3[_0x590f91(0x1fc)] = _0x2ad3b0["toString"][_0x590f91(0x1ed)](_0x2ad3b0)), (_0x54afb8[_0x5d0c36] = _0x321ec3);
+        const _0x3f0535 = (_0x319153[_0x3336d0(0x174)] = _0x319153[_0x3336d0(0x174)] || {}),
+            _0x3f41fc = [_0x3336d0(0x16d), _0x3336d0(0x162), _0x3336d0(0x158), "error", _0x3336d0(0x16a), _0x3336d0(0x171), _0x3336d0(0x173)];
+        for (let _0x40a157 = 0x0; _0x40a157 < _0x3f41fc[_0x3336d0(0x151)]; _0x40a157++) {
+            const _0x55fc95 = _0x5fd346[_0x3336d0(0x152)]["prototype"][_0x3336d0(0x15a)](_0x5fd346),
+                _0x188866 = _0x3f41fc[_0x40a157],
+                _0x473f45 = _0x3f0535[_0x188866] || _0x55fc95;
+            (_0x55fc95["__proto__"] = _0x5fd346["bind"](_0x5fd346)), (_0x55fc95[_0x3336d0(0x16c)] = _0x473f45["toString"]["bind"](_0x473f45)), (_0x3f0535[_0x188866] = _0x55fc95);
         }
     });
-_0x4e2326(),
-    document["querySelector"](_0x1996dc(0x1e0))["addEventListener"](_0x1996dc(0x1eb), function () {
-        const _0x550b29 = _0x1996dc;
-        if (Math[_0x550b29(0x1ea)](Math[_0x550b29(0x1f2)]() * 0xa) + 0x1 == 0x1) {
-            let _0x5edf70 = [_0x550b29(0x1fe), _0x550b29(0x1e3), "중간고사\x20있어요...\x20후에엥...\x20😭"];
-            alert(_0x5edf70[Math[_0x550b29(0x1ea)](Math["random"]() * _0x5edf70[_0x550b29(0x1fb)])]);
+_0x268c1b(),
+    document["querySelector"]("p.copyright")["addEventListener"](_0x209d5e(0x154), function () {
+        const _0x1a0166 = _0x209d5e;
+        if (Math[_0x1a0166(0x176)](Math[_0x1a0166(0x160)]() * 0xa) + 0x1 == 0x1) {
+            let _0x2aad79 = [
+                _0x1a0166(0x16e),
+                "귀여워버리기!\x20❤️",
+                _0x1a0166(0x167),
+                _0x1a0166(0x172),
+                _0x1a0166(0x166),
+                "감추고\x20있는\x20밤",
+                _0x1a0166(0x14f),
+                _0x1a0166(0x159),
+                _0x1a0166(0x15f),
+                _0x1a0166(0x169),
+                _0x1a0166(0x153),
+                "Woo\x20lalalalalalala",
+                _0x1a0166(0x165),
+            ];
+            alert(_0x2aad79[Math[_0x1a0166(0x176)](Math[_0x1a0166(0x160)]() * _0x2aad79[_0x1a0166(0x151)])]);
         }
     });
