@@ -27,7 +27,8 @@ h1 {
     font-size: 3vmin;
 }
 
-p.developer {
+p.developer,
+p.countdown {
     color: #ff734c;
 }
 

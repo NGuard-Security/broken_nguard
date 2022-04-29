@@ -12,15 +12,19 @@
     </head>
     <body>
         <h1>
-            NGuard Mall이<br />
-            곧 여러분들을 찾아뵙니다.
+            NGuard Mall이 곧 여러분들을 찾아뵙니다.
         </h1>
         <div class="msg">
             <p>
-                2022. 05. 05, Grand Opening.
+                2022년 5월 5일, NGuard Security CBT와 함께 오픈합니다.
             </p>
-            <p class="developer">
-                - NGuard 팀원 일동 -
+            <p class="countdown">
+                오픈까지
+                <span>0</span>일
+                <span>0</span>시간
+                <span>0</span>분
+                <span>0</span>초
+                남음!
             </p>
         </div>
         <img class="logo" src="/assets/img/logo.png" alt="NGuard Logo" />
@@ -28,6 +32,10 @@
         <p class="copyright">
             Copyright &copy; 2022-present NGuard. All rights reserved.
         </p>
+        <script src="/assets/js/modules/countdown.js"></script>
         <script src="/assets/js/custom/123ive.js"></script>
+        <script>
+            countDownTimer('.countdown', '05/05/2022 4:30:00 PM');
+        </script>
     </body>
 </html>
