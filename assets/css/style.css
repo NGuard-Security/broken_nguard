@@ -45,16 +45,16 @@ div.contact a {
     color: #ff734c;
 }
 
-img[src="/img/bg.svg"] {
-    position: fixed; z-index: -1;
-    width: 100%;
-    bottom: 0; left: 0;
+.logo {
+    margin-top: 3vmax;
+    max-width: 100px;
     user-select: none; -webkit-user-select: none; -moz-user-select: none;
 }
 
-img[src="/img/logo.png"] {
-    margin-top: 3vmax;
-    max-width: 100px;
+.background {
+    position: fixed; z-index: -1;
+    width: 100%;
+    bottom: 0; left: 0;
     user-select: none; -webkit-user-select: none; -moz-user-select: none;
 }
 
