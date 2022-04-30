@@ -21,7 +21,7 @@ function _0x3ac0() {
         "마음은\x20이렇게\x20알다가도\x20모르지",
         "Woo\x20어서\x20와서\x20love\x20dive",
         "594090CZhbLS",
-        "p.copyright",
+        ".logo",
         "length",
         "Narcissistic,\x20my\x20god\x20I\x20love\x20it\x20서로를\x20비춘\x20밤",
         "querySelector",
