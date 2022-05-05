@@ -12,7 +12,7 @@ const countDownTimer = (selector, date) => {
 
         if (distDt < 0) {
             clearInterval(timer);
-            document.querySelector(selector).textContent = '카운트 다운이 종료 되었습니다!';
+            document.querySelector(selector).textContent = "카운트 다운이 종료 되었습니다!";
             return;
         }
 
@@ -22,30 +22,30 @@ const countDownTimer = (selector, date) => {
         var seconds = Math.floor((distDt % _minute) / _second);
 
         if (days <= 0) {
-            document.querySelector(selector).querySelector('span:nth-child(1)').style = "display: none;"
+            document.querySelector(selector).querySelector("span:nth-child(1)").style = "display: none;";
         } else {
-            document.querySelector(selector).querySelector('span:nth-child(1)').style = ""
+            document.querySelector(selector).querySelector("span:nth-child(1)").style = "";
         }
 
         if (hours <= 0) {
-            document.querySelector(selector).querySelector('span:nth-child(2)').style = "display: none;"
+            document.querySelector(selector).querySelector("span:nth-child(2)").style = "display: none;";
         } else {
-            document.querySelector(selector).querySelector('span:nth-child(2)').style = ""
+            document.querySelector(selector).querySelector("span:nth-child(2)").style = "";
         }
 
         if (minutes <= 0) {
-            document.querySelector(selector).querySelector('span:nth-child(3)').style = "display: none;"
+            document.querySelector(selector).querySelector("span:nth-child(3)").style = "display: none;";
         } else {
-            document.querySelector(selector).querySelector('span:nth-child(3)').style = ""
+            document.querySelector(selector).querySelector("span:nth-child(3)").style = "";
         }
 
-        document.querySelector(selector).querySelector('span:nth-child(1)').textContent = days + "일";
-        document.querySelector(selector).querySelector('span:nth-child(2)').textContent = hours + "시간";
-        document.querySelector(selector).querySelector('span:nth-child(3)').textContent = minutes + "분";
-        document.querySelector(selector).querySelector('span:nth-child(4)').textContent = seconds + "초";
+        document.querySelector(selector).querySelector("span:nth-child(1)").textContent = days + "일";
+        document.querySelector(selector).querySelector("span:nth-child(2)").textContent = hours + "시간";
+        document.querySelector(selector).querySelector("span:nth-child(3)").textContent = minutes + "분";
+        document.querySelector(selector).querySelector("span:nth-child(4)").textContent = seconds + "초";
     }
 
-    showRemaining()
-    
+    showRemaining();
+
     timer = setInterval(showRemaining, 1000);
-}
+};
