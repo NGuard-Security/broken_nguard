@@ -30,9 +30,11 @@
         <div id="twitch"></div>
         <script src="https://player.twitch.tv/js/embed/v1.js"></script>
         <script>
-            new Twitch.Player("twitch", {
-                channel: "nguard_security",
-            });
+            (() => {
+                new Twitch.Player("twitch", {
+                    channel: "nguard_security",
+                });
+            })();
         </script>
         <script src="/assets/js/modules/channelio.js"></script>
     </body>

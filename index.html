@@ -37,7 +37,9 @@
         <script src="/assets/js/modules/countdown.js"></script>
         <script src="/assets/js/custom/declaration.js"></script>
         <script>
-            countDownTimer(".countdown", "05/12/2022 3:30:00 PM");
+            (() => {
+                countDownTimer(".countdown", "05/12/2022 3:30:00 PM");
+            })();
         </script>
     </body>
 </html>
