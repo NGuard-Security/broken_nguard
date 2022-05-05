@@ -28,7 +28,8 @@ h1 {
 }
 
 p.developer,
-p.countdown {
+p.countdown,
+p.important {
     color: #ff734c;
 }
 
