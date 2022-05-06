@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
-        <title>Twitch</title>
-        <style>
-            @import url("assets/css/fonts/GmarketSans/GmarketSans.css");
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <title>Twitch</title>
+    <style>
+      @import url("assets/css/fonts/GmarketSans/GmarketSans.css");
 
-            * {
-                font-family: "GmarketSans" !important;
-            }
+      * {
+        font-family: "GmarketSans" !important;
+      }
 
-            ::selection {
-                background-color: #ffd6ca;
-            }
+      ::selection {
+        background-color: #ffd6ca;
+      }
 
-            body {
-                margin: 0;
-                overflow: hidden;
-            }
-            iframe {
-                width: 100vw;
-                height: 100vh;
-                border: none;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="twitch"></div>
-        <script src="https://player.twitch.tv/js/embed/v1.js"></script>
-        <script>
-            (() => {
-                new Twitch.Player("twitch", {
-                    channel: "nguard_security",
-                });
-            })();
-        </script>
-        <script src="/assets/js/modules/channelio.js"></script>
-    </body>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      iframe {
+        width: 100vw;
+        height: 100vh;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="twitch"></div>
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <script>
+      (() => {
+        new Twitch.Player("twitch", {
+          channel: "nguard_security",
+        });
+      })();
+    </script>
+    <script src="/assets/js/modules/channelio.js"></script>
+  </body>
 </html>
