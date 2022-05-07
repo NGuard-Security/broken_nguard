@@ -48,6 +48,11 @@ div.contact {
 
 div.contact a {
   color: #ff734c;
+  text-decoration: none;
+}
+
+div.contact a:hover {
+  text-decoration: underline solid;
 }
 
 .logo {
