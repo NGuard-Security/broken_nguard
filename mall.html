@@ -49,7 +49,7 @@
           <div class="contentInner">
             <div>
               <span>유료 오픈까지</span>
-              <h4 style="width: 380px">
+              <h4 style="width: 440px" class="countdown">
                 <text>0일</text>
                 <text>0시간</text>
                 <text>0분</text>
@@ -65,7 +65,13 @@
         <div class="content">
           <div>
             <h1>도움이 필요하신가요?</h1>
-            <h2>아래 채널톡으로 NGuard Mall 관련 문의를 하실 수 있습니다.</h2>
+            <h2>
+              아래 채널톡이나 서포트 서버에서 NGuard Mall 관련 문의를 하실 수
+              있습니다.
+            </h2>
+            <a href="/invite/nguard" class="btn primary"
+              >서포트 서버 참여하기</a
+            >
           </div>
           <img src="images/Toa.png" loading="lazy" />
         </div>
@@ -92,6 +98,83 @@
       if (window.wcs) {
         wcs_do();
       }
+    </script>
+
+    <script>
+      const countDownTimer = (selector, date) => {
+        var _vDate = new Date(date);
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+          var now = new Date();
+          var distDt = _vDate - now;
+
+          if (distDt < 0) {
+            clearInterval(timer);
+            document.querySelector(selector).textContent = "Finished";
+            return;
+          }
+
+          var days = Math.floor(distDt / _day);
+          var hours = Math.floor((distDt % _day) / _hour);
+          var minutes = Math.floor((distDt % _hour) / _minute);
+          var seconds = Math.floor((distDt % _minute) / _second);
+
+          if (days <= 0) {
+            document
+              .querySelector(selector)
+              .querySelector("text:nth-child(1)").style = "display: none;";
+          } else {
+            document
+              .querySelector(selector)
+              .querySelector("text:nth-child(1)").style = "";
+          }
+
+          if (hours <= 0) {
+            document
+              .querySelector(selector)
+              .querySelector("text:nth-child(2)").style = "display: none;";
+          } else {
+            document
+              .querySelector(selector)
+              .querySelector("text:nth-child(2)").style = "";
+          }
+
+          if (minutes <= 0) {
+            document
+              .querySelector(selector)
+              .querySelector("text:nth-child(3)").style = "display: none;";
+          } else {
+            document
+              .querySelector(selector)
+              .querySelector("text:nth-child(3)").style = "";
+          }
+
+          document
+            .querySelector(selector)
+            .querySelector("text:nth-child(1)").textContent = days + "일";
+          document
+            .querySelector(selector)
+            .querySelector("text:nth-child(2)").textContent = hours + "시간";
+          document
+            .querySelector(selector)
+            .querySelector("text:nth-child(3)").textContent = minutes + "분";
+          document
+            .querySelector(selector)
+            .querySelector("text:nth-child(4)").textContent = seconds + "초";
+        }
+
+        showRemaining();
+
+        timer = setInterval(showRemaining, 1000);
+      };
+    </script>
+    <script>
+      countDownTimer(".countdown", "06/08/2022 5:30:00 PM");
     </script>
   </body>
 </html>
