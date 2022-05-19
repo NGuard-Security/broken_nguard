@@ -1,45 +1,97 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <base href="https://nguard.xyz/" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="SSKATE & NGuard Securities" />
-    <meta name="keywords" content="NGuard, NGuard Mall, NGuard Securities" />
-    <meta name="description" content="NGuard Mall 안내" />
-    <title>NGuard Mall 안내</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <meta property="og:title" content="CBT Main : NGuard Security" />
+    <title>CBT Main : NGuard Mall</title>
+    <link type="text/css" rel="stylesheet" href="/css/index.css" />
+    <link rel="canonical" href="https://nguard.xyz/" />
+    <link rel="apple-touch-icon" href="/images/icon/512x512.png" />
+    <link rel="icon" href="/images/small_logo.png" />
+    <meta
+      name="description"
+      content="NGuard Mall은 디스코드 보안 서비스인 NGuard Security의 유료 플랜을 쉽고 간단하게 구매 할 수 있는 플랫폼입니다."
+    />
+    <meta
+      property="og:description"
+      content="NGuard Mall은 디스코드 보안 서비스인 NGuard Security의 유료 플랜을 쉽고 간단하게 구매 할 수 있는 플랫폼입니다."
+    />
   </head>
   <body>
-    <h1>
-      NGuard Mall이<br />
-      곧 여러분들을 찾아뵙니다.
-    </h1>
-    <div class="msg">
-      <p>
-        2022년 6월 8일,<br />
-        유료 서비스와 서비스 몰이 오픈합니다.
-      </p>
-      <p class="countdown">
-        유료 오픈까지
-        <span>0일</span>
-        <span>0시간</span>
-        <span>0분</span>
-        <span>0초</span>
-        남음!
-      </p>
-    </div>
-    <img class="logo" src="/assets/img/logo.png" alt="NGuard Logo" />
-    <img class="background" src="/assets/img/bg.svg" alt="Background" />
-    <p class="copyright">
-      Copyright &copy; 2022-present NGuard. All rights reserved.
-    </p>
-    <script src="/assets/js/modules/countdown.js"></script>
-    <script src="/assets/js/custom/declaration.js"></script>
+    <main>
+      <section id="section1">
+        <!-- 봇 요약 소개 -->
+        <div class="content">
+          <h2 style="text-align: left">NGuard</h2>
+          <h2 style="text-align: right">Mall</h2>
+          <p style="text-align: center">
+            NGuard Mall은 디스코드 보안 서비스인 NGuard Security의
+            <span></span>
+            유료 플랜을 쉽고 간단하게 구매 할 수 있는 플랫폼입니다.
+          </p>
+          <div class="btns">
+            <a class="btn primary" href="/invite/nguard">서포트 서버</a>
+          </div>
+        </div>
+        <iframe
+          src="https://nguard-security.github.io/nguard_video_player/plyr/player.html?src=https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4&autoplay=1&loop=1"
+          title="Plyr video player"
+          frameborder="0"
+          allow="autoplay; encrypted-media;"
+        ></iframe>
+      </section>
+
+      <section id="section2">
+        <div class="content">
+          <div class="contentInner">
+            <div>
+              <span>유료 오픈까지</span>
+              <h4 style="width: 380px">
+                <text>0일</text>
+                <text>0시간</text>
+                <text>0분</text>
+                <text>0초</text>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section5">
+        <!-- 도움이 필요하신가요? -->
+        <div class="content">
+          <div>
+            <h1>도움이 필요하신가요?</h1>
+            <h2>아래 채널톡으로 NGuard Mall 관련 문의를 하실 수 있습니다.</h2>
+          </div>
+          <img src="images/Toa.png" loading="lazy" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <p>© 2022-present NGuard Securities, All rights reserved.</p>
+        <br />
+        <p>Designed by Lavi / SSKATE.</p>
+        <p>&nbsp;</p>
+        <p>
+          <a href="/policy/tos">이용약관</a> |
+          <a href="/policy/privacy">개인정보 처리방침</a>
+        </p>
+      </div>
+    </footer>
+    <script src="/js/channelio.js"></script>
+    <script src="//wcs.naver.net/wcslog.js"></script>
     <script>
-      (() => {
-        countDownTimer(".countdown", "06/08/2022 5:30:00 PM");
-      })();
+      if (!wcs_add) var wcs_add = {};
+      wcs_add["wa"] = "f781bd48531968";
+      if (window.wcs) {
+        wcs_do();
+      }
     </script>
   </body>
 </html>
