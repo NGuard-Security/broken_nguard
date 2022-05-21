@@ -21,6 +21,15 @@
     />
 
     <script src="https://unpkg.com/@hotwired/turbo"></script>
+    <script>
+      if (
+        window.navigator.userAgent.includes("MSIE") ||
+        window.navigator.userAgent.includes("Internet Explorer") ||
+        window.navigator.userAgent.includes("Trident")
+      ) {
+        window.location.replace("ie.html?redirect=" + location.href);
+      }
+    </script>
   </head>
   <body>
     <header>

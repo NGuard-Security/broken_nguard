@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <base href="https://nguard.xyz/" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IE 지원 중단 : NGuard Security</title>
+    <link rel="stylesheet" href="/css/invite.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"
+    />
+  </head>
+  <body>
+    <div class="BGlogo">
+      <img src="/images/logo.png" style="width: 100%" />
+    </div>
+    <main class="main">
+      <div class="content_wrap">
+        <div class="topBar"><p></p></div>
+
+        <div class="info content">
+          <img
+            class="server_img"
+            loading="lazy"
+            src="/images/warning.svg"
+            width="64px"
+          />
+          <div class="content_texts">
+            <h2>Internet Explorer 지원 중단 안내</h2>
+            <br />
+            <article>
+              <h3>
+                더 이상 IE로 NGuard 서비스를 이용하실 수 없습니다.<br /><br /><br />
+                계속 NGuard 서비스를 이용하고 싶으시다면,<br /><br />
+                Chrome/Edge/Whale 브라우저를 사용해 주세요.
+              </h3>
+            </article>
+          </div>
+
+          <div class="content_loginBtns">
+            <div class="loginBtn goBtn001" style="background: #5865f2">
+              <span style="color: #fff">Edge에서 열기</span>
+            </div>
+            <a
+              href="https://www.google.com/chrome"
+              target="_blank"
+              class="loginBtn goBtn002"
+              style="background: #5865f2; text-decoration: none"
+            >
+              <span style="color: #fff">Chrome 다운로드</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+    <script>
+      const Request = function () {
+        this.getParameter = function (name) {
+          let rtnval = "";
+          let nowAddress = unescape(location.href);
+          var parameters = nowAddress
+            .slice(nowAddress.indexOf("?") + 1, nowAddress.length)
+            .split("&");
+          for (let i = 0; i < parameters.length; i++) {
+            let varName = parameters[i].split("=")[0];
+            if (varName.toUpperCase() == name.toUpperCase()) {
+              rtnval = parameters[i].split("=")[1];
+              break;
+            }
+          }
+          return rtnval;
+        };
+      };
+
+      const request = new Request();
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        NProgress.start();
+      });
+
+      window.addEventListener("load", function () {
+        NProgress.done();
+      });
+
+      document.body
+        .querySelector(".goBtn001")
+        .addEventListener("click", function () {
+          NProgress.start();
+          NProgress.inc();
+          document.body.querySelector(".goBtn001").style =
+            "display: none; background: #5865f2;";
+          NProgress.inc();
+          try {
+            NProgress.inc();
+            window.location =
+              "microsoft-edge:" + request.getParameter("redirect");
+          } finally {
+            NProgress.done();
+          }
+        });
+
+      document.body
+        .querySelector(".goBtn002")
+        .addEventListener("click", function () {
+          NProgress.start();
+          NProgress.done();
+        });
+    </script>
+  </body>
+</html>
