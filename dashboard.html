@@ -1,100 +1,68 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="kr">
   <head>
     <base href="https://nguard.xyz/" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Error Page : NGuard Security" />
     <title>Error Page : NGuard Security</title>
-    <link type="text/css" rel="stylesheet" href="/css/index.css" />
-    <link rel="canonical" href="https://nguard.xyz/" />
-    <link rel="apple-touch-icon" href="/images/icon/512x512.png" />
-    <link rel="icon" href="/images/small_logo.png" />
-    <meta
-      name="description"
-      content="NGuard Security는 디스코드 보안 서비스로, 디스코드 서버 보안에
-    새로운 변화를 선사합니다."
+    <link rel="stylesheet" href="/css/invite.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"
     />
-    <meta
-      property="og:description"
-      content="NGuard Security는 디스코드 보안 서비스로, 디스코드 서버 보안에 새로운 변화를 선사합니다."
-    />
-
-    <script src="https://unpkg.com/@hotwired/turbo"></script>
-    <script>
-      if (
-        window.navigator.userAgent.includes("MSIE") ||
-        window.navigator.userAgent.includes("Internet Explorer") ||
-        window.navigator.userAgent.includes("Trident")
-      ) {
-        window.location.replace("ie.html?redirect=" + location.href);
-      }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@hotwired/turbo" defer></script>
   </head>
   <body>
-    
-  <body>
-    <header>
-      <div class="headerInner">
-        <h1>
-          <a href="/"><img src="/images/logo.png" loading="lazy" /></a>
-        </h1>
-        <nav>
-          <a href="/dashboard" >Dashboard</a>
-          <div class="menuBtn">
-            <svg
-              class="menuBtn1"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z" />
-            </svg>
-            <svg
-              class="menuBtn2"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"
-              />
-            </svg>
+    <div class="BGlogo">
+      <img src="/images/logo.png" style="width: 100%" />
+    </div>
+    <main class="main">
+      <div class="content_wrap">
+        <div class="topBar"><p></p></div>
+
+        <div class="info content">
+          <img
+            class="server_img"
+            loading="lazy"
+            src="/images/warning.svg"
+            width="64px"
+          />
+          <div class="content_texts">
+            <h2>NGuard Security CBT 진행 중입니다.</h2>
+            <br />
+            <article>
+              <h3>
+                현재 NGuard Security CBT 진행 중으로,<br /><br />
+                보안 초대링크 기능 등 일부 기능만 이용이 가능한 점 양해
+                부탁드립니다.
+              </h3>
+            </article>
           </div>
-        </nav>
-      </div>
-      <div class="menu">
-        <a href="/dashboard" >Dashboard</a>
-      </div>
-    </header>
-    <main>
-      <section id="section6">
-        <!-- 오류 페이지 -->
-        <div class="content">
-          <div>
-            <h1>NGuard Security CBT 진행 중입니다.</h1>
-            <h2>
-              현재 NGuard Security CBT 진행 중으로,<br /><br />
-              보안 초대링크 기능 등 일부 기능만 이용이 가능한 점 양해
-              부탁드립니다.
-            </h2>
-            <a href="/" class="btn primary">메인으로 돌아가기</a>
+
+          <div class="content_loginBtns">
+            <a
+              href="/"
+              class="loginBtn"
+              style="background: #5865f2; text-decoration: none"
+            >
+              <span style="color: #fff">메인으로 돌아가기</span>
+            </a>
           </div>
         </div>
-      </section>
+      </div>
     </main>
 
-    <footer>
-      <div>
-        <p>© 2022-present NGuard Securities, All rights reserved.</p>
-        <br />
-        <p>Designed by Lavi / SSKATE.</p>
-      </div>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
-    <script src="/js/channelio.js" data-turbo-eval="false"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        NProgress.start();
+      });
+
+      window.addEventListener("load", function () {
+        NProgress.done();
+      });
+    </script>
   </body>
 </html>
