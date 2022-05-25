@@ -159,6 +159,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"
     />
+    <script>
+      if (
+        window.navigator.userAgent.indexOf("MSIE") != -1 ||
+        window.navigator.userAgent.indexOf("Internet Explorer") != -1 ||
+        window.navigator.userAgent.indexOf("Trident") != -1
+      ) {
+        window.location.replace("ie.html?redirect=" + location.href);
+      }
+    </script>
   </head>
   <body>
     <div class="BGlogo">
