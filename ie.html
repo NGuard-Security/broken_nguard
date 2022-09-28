@@ -160,36 +160,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"
     />
-    <script>
-      const Request = function () {
-        this.getParameter = function (name) {
-          let rtnval = "";
-          let nowAddress = unescape(location.href);
-          var parameters = nowAddress
-            .slice(nowAddress.indexOf("?") + 1, nowAddress.length)
-            .split("&");
-          for (let i = 0; i < parameters.length; i++) {
-            let varName = parameters[i].split("=")[0];
-            if (varName.toUpperCase() == name.toUpperCase()) {
-              rtnval = parameters[i].split("=")[1];
-              break;
-            }
-          }
-          return rtnval;
-        };
-      };
-
-      const request = new Request();
-    </script>
-    <script>
-      if (
-        window.navigator.userAgent.indexOf("MSIE") == -1 ||
-        window.navigator.userAgent.indexOf("Internet Explorer") == -1 ||
-        window.navigator.userAgent.indexOf("Trident") == -1
-      ) {
-        window.location.replace(request.getParameter("redirect") || "broken.html");
-      }
-    </script>
   </head>
   <body>
     <div class="BGlogo">
@@ -237,6 +207,28 @@
 
     <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
+    <script>
+      const Request = function () {
+        this.getParameter = function (name) {
+          let rtnval = "";
+          let nowAddress = unescape(location.href);
+          var parameters = nowAddress
+            .slice(nowAddress.indexOf("?") + 1, nowAddress.length)
+            .split("&");
+          for (let i = 0; i < parameters.length; i++) {
+            let varName = parameters[i].split("=")[0];
+            if (varName.toUpperCase() == name.toUpperCase()) {
+              rtnval = parameters[i].split("=")[1];
+              break;
+            }
+          }
+          return rtnval;
+        };
+      };
+
+      const request = new Request();
+    </script>
+    
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         NProgress.start();
