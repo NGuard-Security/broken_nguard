@@ -1,16 +1,195 @@
 <!DOCTYPE html>
 <html lang="kr">
   <head>
-    <base href="https://nguard.xyz/" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IE 지원 중단 : NGuard Security</title>
-    <link rel="stylesheet" href="/css/invite.css" />
+    <style>
+      @import url("https://unpkg.com/pretendard@1.3.5/dist/web/static/pretendard-dynamic-subset.css");
+      @import url("https://unpkg.com/pretendard@1.3.5/dist/web/variable/pretendardvariable.css");
+
+      #nprogress .bar {
+        background: #ff734c !important;
+      }
+
+      #nprogress .peg {
+        box-shadow: 0 0 10px #ff734c, 0 0 5px #ff734c !important;
+      }
+
+      #nprogress .spinner-icon {
+        border-top-color: #ff734c !important;
+        border-left-color: #ff734c !important;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Pretendard", "Pretendard Variable";
+      }
+
+      html,
+      body,
+      .main {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      body {
+        background: #000000;
+      }
+
+      .BGlogo {
+        width: 130px;
+        height: 30px;
+        position: absolute;
+        top: 50px;
+        left: 70px;
+      }
+
+      .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content_wrap {
+        background: #37393e;
+        /* 37393e */
+        width: 900px;
+        height: 620px;
+        border-radius: 14px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      @media (max-width: 1024px) {
+        .content_wrap {
+          width: 100vw;
+          height: 100vh;
+          border-radius: 0px;
+        }
+        .content_texts h1 {
+          font-size: 1.5em;
+        }
+        .content_texts h2 {
+          font-size: 1.25em;
+        }
+        .content_texts h3 {
+          font-size: 1em;
+        }
+      }
+
+      .topBar {
+        background: #1d1f22;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+      }
+
+      .topBar p {
+        background: #ff5050;
+        width: 15px;
+        height: 15px;
+        border-radius: 1000px;
+        margin-left: 20px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: -moz-none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+      }
+
+      .content_texts {
+        margin-bottom: 50px;
+        cursor: default;
+      }
+
+      .content_texts h1,
+      .content_texts h2,
+      .content_texts h3 {
+        color: #fff;
+        margin: 0px auto;
+        width: fit-content;
+        text-align: center;
+      }
+
+      .content_texts p {
+        color: #afabab;
+        margin: 15px auto 0px auto;
+        width: fit-content;
+      }
+
+      .server_img {
+        border-radius: 16px;
+        display: block;
+        margin: 0px auto;
+        margin-bottom: 1rem;
+      }
+
+      article {
+        font-size: 16px;
+        line-height: 20px;
+        color: #b9bbbe;
+        margin: 15px 0 15px 0;
+        padding: 0;
+        border: 0;
+        vertical-align: baseline;
+        text-align: center;
+        word-break: keep-all;
+
+        display: flex;
+        justify-content: center;
+      }
+
+      article div:nth-child(1) {
+        margin-right: 16px;
+      }
+    </style>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css"
     />
+    <script>
+      const Request = function () {
+        this.getParameter = function (name) {
+          let rtnval = "";
+          let nowAddress = unescape(location.href);
+          var parameters = nowAddress
+            .slice(nowAddress.indexOf("?") + 1, nowAddress.length)
+            .split("&");
+          for (let i = 0; i < parameters.length; i++) {
+            let varName = parameters[i].split("=")[0];
+            if (varName.toUpperCase() == name.toUpperCase()) {
+              rtnval = parameters[i].split("=")[1];
+              break;
+            }
+          }
+          return rtnval;
+        };
+      };
+
+      const request = new Request();
+    </script>
+    <script>
+      if (
+        window.navigator.userAgent.indexOf("MSIE") == -1 ||
+        window.navigator.userAgent.indexOf("Internet Explorer") == -1 ||
+        window.navigator.userAgent.indexOf("Trident") == -1
+      ) {
+        window.location.replace(request.getParameter("redirect") || "broken.html");
+      }
+    </script>
   </head>
   <body>
     <div class="BGlogo">
@@ -57,27 +236,6 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
-    <script>
-      const Request = function () {
-        this.getParameter = function (name) {
-          let rtnval = "";
-          let nowAddress = unescape(location.href);
-          var parameters = nowAddress
-            .slice(nowAddress.indexOf("?") + 1, nowAddress.length)
-            .split("&");
-          for (let i = 0; i < parameters.length; i++) {
-            let varName = parameters[i].split("=")[0];
-            if (varName.toUpperCase() == name.toUpperCase()) {
-              rtnval = parameters[i].split("=")[1];
-              break;
-            }
-          }
-          return rtnval;
-        };
-      };
-
-      const request = new Request();
-    </script>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
