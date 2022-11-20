@@ -18,57 +18,7 @@
           font-family: "Pretendard Variable" !important;
         }
 
-        lockquote,
-        body,
-        button,
-        code,
-        dd,
-        div,
-        dl,
-        dt,
-        fieldset,
-        form,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        input,
-        legend,
-        li,
-        ol,
-        p,
-        pre,
-        select,
-        td,
-        textarea,
-        th,
-        ul {
-          margin: 0;
-          padding: 0;
-        }
-        body,
-        button,
-        input,
-        select,
-        td,
-        textarea,
-        th {
-          font-size: 14px;
-          line-height: 1.5;
-          font-weight: 400;
-          color: #333;
-        }
-        .content-article {
-          max-width: 1296px;
-          margin: 0 auto;
-          padding-bottom: 182px;
-        }
-        .pc .content-article {
-          min-height: calc(100vh - 254px);
-        }
-        .wrap_error {
+        .error {
           position: absolute;
           top: 50%;
           left: 0;
@@ -78,73 +28,42 @@
           text-align: center;
         }
 
-        .wrap_error img {
-          max-width: 602px;
-        }
-
-        .wrap_error strong {
+        .error strong {
           display: block;
-          margin-top: 60px;
           font-size: 32px;
           font-weight: 700;
           line-height: 46px;
           letter-spacing: -0.8px;
-          color: var(--baseForeground);
         }
 
-        .wrap_error p {
+        .error p {
           margin-top: 12px;
           line-height: 1.71;
           letter-spacing: -0.2px;
           color: #666;
         }
+
         @media screen and (max-width: 767px) {
-          .content-article {
-            max-width: 364px;
-            padding-left: 24px;
-            padding-right: 24px;
-          }
-          .wrap_error {
+          .error {
             left: 24px;
             right: 24px;
-          }
-          .wrap_error img {
-            width: 362px;
-            max-width: 100%;
-          }
-        }
-        @media screen and (max-width: 1023px) {
-          .content-article {
-            padding-bottom: 172px;
-            max-width: 630px;
-          }
-          .pc .content-article {
-            min-height: calc(100vh - 232px);
           }
         }
       </style>
     </head>
-    <body class="light">
-      <div class="container-doc">
-        <main class="doc-main">
-          <section id="mainContent" class="inner-main">
-            <div class="main-content">
-              <div class="content-article">
-                <div class="wrap_error">
-                  <img
-                    src="https://b.kakao.com/images/img_error.png"
-                    alt="404"
-                  />
-                  <strong>찾으시는 페이지가 없습니다.</strong>
-                  <p>
-                    잘못된 접근이거나 요청하신 페이지를 찾을 수 없습니다. <br />
-                    입력하신 페이지의 주소가 정확한지 다시 한번 확인해 주시기
-                    바랍니다.
-                  </p>
-                </div>
-              </div>
+    <body>
+      <div>
+        <main>
+          <div>
+            <div class="error">
+              <strong>찾으시는 페이지가 없습니다.</strong>
+              <p>
+                잘못된 접근이거나 요청하신 페이지를 찾을 수 없습니다. <br />
+                입력하신 페이지의 주소가 정확한지 다시 한번 확인해 주시기
+                바랍니다.
+              </p>
             </div>
-          </section>
+          </div>
         </main>
       </div>
     </body>
