@@ -38,6 +38,10 @@
                 <strong class="text-blue-700 font-semibold"><a href="/notice/3">👉 3차 공지 바로가기</a></strong><br />
                 <br />
 
+                이 공지 이후에 발표된 5차 공지는 아래 링크에서 확인하실 수 있습니다.
+                <strong class="text-blue-700 font-semibold"><a href="/notice/5">👉 5차 공지 바로가기</a></strong><br />
+                <br />
+
                 <strong class="text-blue-700 font-semibold">▲ 15시~22시 서버 다중화 및 네트워크 작업</strong><br />
                 15시부터 22시까지 본격적인 서비스 재개통을 위한 서버 다중화 및 네트워크 작업을 진행하였습니다.<br />
                 <br />
@@ -70,7 +74,7 @@
                 <div class="flex items-center gap-2 mb-2">
                     <img src="https://reboot.nguard.xyz/notice/assets/images/channelio.png" class="h-5" />
                     <h2>채널톡:</h2>
-                    <a href="https://nguard.channel.io/" class="text-blue-400">문의하기</a>
+                    <a href="javascript:ChannelIO('showMessenger');" class="text-blue-400">문의하기</a>
                 </div>
 
                 <div class="flex items-center gap-2 mb-2">
@@ -105,6 +109,50 @@
             </h2>
             <br />
             <br />
+            <br />
         </div>
+        
+        <!-- Channel Plugin Scripts -->
+        <script>
+            (function () {
+                var w = window;
+                if (w.ChannelIO) {
+                    return (window.console.error || window.console.log || function () {})("ChannelIO script included twice.");
+                }
+                var ch = function () {
+                    ch.c(arguments);
+                };
+                ch.q = [];
+                ch.c = function (args) {
+                    ch.q.push(args);
+                };
+                w.ChannelIO = ch;
+                function l() {
+                    if (w.ChannelIOInitialized) {
+                        return;
+                    }
+                    w.ChannelIOInitialized = true;
+                    var s = document.createElement("script");
+                    s.type = "text/javascript";
+                    s.async = true;
+                    s.src = "https://cdn.channel.io/plugin/ch-plugin-web.js";
+                    s.charset = "UTF-8";
+                    var x = document.getElementsByTagName("script")[0];
+                    x.parentNode.insertBefore(s, x);
+                }
+                if (document.readyState === "complete") {
+                    l();
+                } else if (window.attachEvent) {
+                    window.attachEvent("onload", l);
+                } else {
+                    window.addEventListener("DOMContentLoaded", l, false);
+                    window.addEventListener("load", l, false);
+                }
+            })();
+            ChannelIO("boot", {
+                pluginKey: "a567dba9-4524-4e68-b42b-db9063e4539e",
+            });
+        </script>
+        <!-- End Channel Plugin -->
     </body>
 </html>
