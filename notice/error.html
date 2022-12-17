@@ -18,6 +18,10 @@
           font-family: "Pretendard Variable" !important;
         }
 
+        body {
+          background: #ffffff;
+        }
+
         .error {
           position: absolute;
           top: 50%;
@@ -34,6 +38,7 @@
           font-weight: 700;
           line-height: 46px;
           letter-spacing: -0.8px;
+          color: #000000;
         }
 
         .error p {
@@ -47,6 +52,20 @@
           .error {
             left: 24px;
             right: 24px;
+          }
+        }
+
+        @media (prefers-color-scheme: dark) {
+          body {
+            background: #131516;
+          }
+
+          .error strong {
+            color: #ffffff;
+          }
+
+          .error p {
+            color: #a8a095;
           }
         }
       </style>
