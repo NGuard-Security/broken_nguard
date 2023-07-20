@@ -1,0 +1,10 @@
+@import url("fonts/SUIT-Variable.css");
+
+* {
+    font-family: "SUIT Variable" !important;
+}
+
+menu, ol, ul {
+    list-style: decimal !important;
+    margin-left: 18px !important;
+}
